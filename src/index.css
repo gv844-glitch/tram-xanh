@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Be Vietnam Pro', sans-serif;
+  --color-brand-primary: #2E7D32;
+  --color-brand-secondary: #66BB6A;
+  --color-brand-surface: #F8F9FA;
+  --color-brand-accent: #E8F8EA;
+  --color-brand-text: #212121;
+}
+
+@layer base {
+  body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    color: #212121;
+    background-color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #2E7D32;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1b5e20;
+}
+
